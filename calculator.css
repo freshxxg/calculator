@@ -1,0 +1,60 @@
+body,div,table,li,tr,td{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+.background_area{
+    width: 800px;
+    height: 600px;
+    background-color: #5C4F49;
+    margin: auto;
+}
+.calculator{
+    width: 355px;
+    height: 430px;
+    background-color: #EFEDF0;
+    position: absolute;
+    left: 50%;
+    margin-left: -177.5px;
+    top:50%;
+    margin-top: -215px;
+    border-radius:3px;
+}
+#calculator_text{
+    font-size: 20px;
+    color: #979593;
+    height: 69px;
+    text-align: center;
+    font-size: 27px;
+    line-height:69px;
+}
+#display{
+    width: 274px;
+    height: 53px;
+    border-radius:3px;
+    margin: auto;
+    background-color: #F7F7F7;
+    text-align: right;
+    color: #555555;
+    font-size: 25px;
+    line-height: 53px;
+    margin-bottom: 15px;
+}
+.key_table{
+    margin: auto;
+    border-spacing: 13px 10px;
+}
+.number_key{
+    cursor: pointer;
+    width: 58px;
+    height: 41px;
+    border-radius:3px;
+    text-align: center;
+    color: #555555;
+    border: 1px solid #E4E4E4;
+    font-size: 20px;
+    background-image: -moz-linear-gradient(top, #F7F7F7, #E4E4E4); /*火狐*/
+    background: -o-linear-gradient(top, #F7F7F7 0%,#E4E4E4 100%);/*Opera*/
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F7F7F7), color-stop(1,#E4E4E4)); /*Chrome*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00FF00', endColorstr='#FF0000', GradientType='0'); /*IE*/
+}

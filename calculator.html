@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>计算器</title>
+    <link rel="stylesheet"  type="text/css"  href="calculator.css">
+    <script src="calculator.js"></script>
+</head>
+<body>
+    <div class="background_area" >
+        <div class="calculator">
+            <div id="calculator_text">计算器</div>
+            <div id="display"  >0</div>
+            <table class="key_table" id="key_table" >
+               <tbody>
+               <tr >
+                   <td class="number_key"  id="clear"  onclick="clear_display()">c</td>
+                   <td class="number_key"  id="delete_key" onclick="delete_key()">⬅</td>
+                   <td class="number_key"  onclick="click_number('*')">*</td>
+                   <td class="number_key" onclick="click_number('/')">/</td>
+               </tr>
+               <tr>
+                   <td class="number_key" onClick="click_number(7)">7</td>
+                   <td class="number_key" onClick="click_number(8)">8</td>
+                   <td class="number_key" onClick="click_number(9)">9</td>
+                   <td class="number_key"  onclick="click_number('%')">%</td>
+               </tr>
+               <tr>
+                   <td class="number_key" onClick="click_number(4)">4</td>
+                   <td class="number_key" onClick="click_number(5)">5</td>
+                   <td class="number_key" onClick="click_number(6)">6</td>
+                   <td class="number_key"  onclick="click_number('-')">-</td>
+               </tr>
+               <tr>
+                   <td class="number_key" onClick="click_number(1)">1</td>
+                   <td class="number_key" onClick="click_number(2)">2</td>
+                   <td class="number_key" onClick="click_number(3)">3</td>
+                   <td class="number_key" rowspan="2" id="equality" onClick="calculation_result()">=</td>
+               </tr>
+               <tr>
+                   <td class="number_key" onClick="click_number(0)" >0</td>
+                   <td class="number_key"  onclick="click_point()">.</td>
+                   <td class="number_key"  onclick="click_number('+')">+</td>
+               </tr>
+               </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
